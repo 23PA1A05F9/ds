@@ -1,0 +1,43 @@
+#include<stdio.h>
+int main() 
+{
+int I,j,k,q,w,e;
+char a[20],b[20],c[20];
+printf("enter a word=");
+I=-1;
+do{
+++I;
+scanf("%c",&a[I]);
+
+}while(a[I]!='\n');
+q=I;
+j=-1;
+printf("enter 2nd word=");
+do{
+++j;
+scanf("%c",&b[j]);
+
+}while(b[j]!='\n');
+w=j;
+e=q+w;
+for(I=0,k=0;I<q;++k,++I)
+{
+c[k]=a[I];
+}
+for(j=0;j<=w;++k,++j) {
+c[k]=b[j];
+
+}
+k=0;
+do{
+ 
+printf("%c",c[k]);
+++k;
+
+}while(c[k]!='\n');
+
+
+return 0;
+}
+   
+//string concatenate
