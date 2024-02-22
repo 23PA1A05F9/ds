@@ -2,17 +2,17 @@
 int power(int a, int b) 
 {
 int I=1,s=1;
-for(I=1;I<=b;++I) 
+  for(I=1;I<=b;++I) 
 { s=s*a;
-}
+ }
 return s;
 }
 int main() 
 {
 int a,b,k;
-printf("enter");
-scanf("%d%d",&a,&b);
+ printf("enter");
+ scanf("%d%d",&a,&b);
 
-printf("%d",power(a,b));
+  printf("%d",power(a,b));
 return 0;
-}
+ }
