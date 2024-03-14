@@ -8,51 +8,51 @@ struct node *next;
 
 void created() 
 {
-int d;
-do{
+ int d;
+ do{
 printf("enter\n");
 scanf("%d",&d);
-newnode=malloc(sizeof(struct node));
-newnode->data=d;
+ newnode=malloc(sizeof(struct node));
+ newnode->data=d;
 newnode->next=NULL;
 if(head==NULL) 
 {
-head=newnode;
+ head=newnode;
 last=newnode;
 }
 else
 {
 last->next=newnode;
 last=newnode;
-}
+ }
 }while(d!=999);
 }
 void pri() 
 {
 temp=head;
 printf("after delection");
-while(temp!=NULL)
+ while(temp!=NULL)
 {
 printf("%d",temp->data);
-temp=temp->next;
+ temp=temp->next;
 }
-}
-void delete () 
-{
+ }
+ void delete () 
+{ 
 if(head==NULL){
 printf("list is empty");
 }
 
 else{
 
-temp=head;
+ temp=head;
 head=temp->next;
 free(temp);
 }
 }
-int main()
+ int main()
 
-{
+  {
 printf("last number is 999");
 created();
 delete();
