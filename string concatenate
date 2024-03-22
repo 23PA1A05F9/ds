@@ -40,4 +40,4 @@ printf("%c",c[k]);
 return 0;
 }
    
-//string concatenate
+//sring concatenate
